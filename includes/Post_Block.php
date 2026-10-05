@@ -156,7 +156,7 @@ class Post_Block {
 			$zepblocks_font_name = str_replace( "'", '', explode( ',', $zepblocks_title_font_family )[0] );
 			$zepblocks_font_handle = 'zepblocks-google-font-' . sanitize_title( $zepblocks_font_name );
 			if ( ! in_array( $zepblocks_font_handle, $zepblocks_enqueued_fonts ) ) {
-				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $zepblocks_font_name ) . '&display=swap';
+				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . urlencode( $zepblocks_font_name ) . '&display=swap';
 				wp_enqueue_style( $zepblocks_font_handle, $zepblocks_google_fonts_url, array(), ZEPBLOCKS_VERSION);
 				$zepblocks_enqueued_fonts[] = $zepblocks_font_handle;
 			}
@@ -166,7 +166,7 @@ class Post_Block {
 			$zepblocks_font_name = str_replace( "'", '', explode( ',', $zepblocks_excerpt_font_family )[0] );
 			$zepblocks_font_handle = 'zepblocks-google-font-' . sanitize_title( $zepblocks_font_name );
 			if ( ! in_array( $zepblocks_font_handle, $zepblocks_enqueued_fonts ) ) {
-				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $zepblocks_font_name ) . '&display=swap';
+				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . urlencode( $zepblocks_font_name ) . '&display=swap';
 				wp_enqueue_style( $zepblocks_font_handle, $zepblocks_google_fonts_url, array(), ZEPBLOCKS_VERSION);
 				$zepblocks_enqueued_fonts[] = $zepblocks_font_handle;
 			}
@@ -176,7 +176,7 @@ class Post_Block {
 			$zepblocks_font_name = str_replace( "'", '', explode( ',', $zepblocks_meta_font_family )[0] );
 			$zepblocks_font_handle = 'zepblocks-google-font-' . sanitize_title( $zepblocks_font_name );
 			if ( ! in_array( $zepblocks_font_handle, $zepblocks_enqueued_fonts ) ) {
-				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $zepblocks_font_name ) . '&display=swap';
+				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . urlencode( $zepblocks_font_name ) . '&display=swap';
 				wp_enqueue_style( $zepblocks_font_handle, $zepblocks_google_fonts_url, array(), ZEPBLOCKS_VERSION);
 				$zepblocks_enqueued_fonts[] = $zepblocks_font_handle;
 			}
@@ -186,7 +186,7 @@ class Post_Block {
 			$zepblocks_font_name = str_replace( "'", '', explode( ',', $zepblocks_link_font_family )[0] );
 			$zepblocks_font_handle = 'zepblocks-google-font-' . sanitize_title( $zepblocks_font_name );
 			if ( ! in_array( $zepblocks_font_handle, $zepblocks_enqueued_fonts ) ) {
-				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . str_replace( ' ', '+', $zepblocks_font_name ) . '&display=swap';
+				$zepblocks_google_fonts_url = 'https://fonts.googleapis.com/css2?family=' . urlencode( $zepblocks_font_name ) . '&display=swap';
 				wp_enqueue_style( $zepblocks_font_handle, $zepblocks_google_fonts_url, array(), ZEPBLOCKS_VERSION);
 				$zepblocks_enqueued_fonts[] = $zepblocks_font_handle;
 			}
