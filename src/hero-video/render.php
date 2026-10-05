@@ -12,7 +12,7 @@ call_user_func(
 		$video_url              = $attributes['videoUrl'] ?? '';
 		$poster_url             = $attributes['posterUrl'] ?? '';
 		$title                  = $attributes['title'] ?? 'A Beachfront Luxury Vacation Rental Awaits';
-		$description            = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience.';
+		$description            = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience.';
 		$button_text            = $attributes['buttonText'] ?? 'Learn More';
 		$button_url             = $attributes['buttonUrl'] ?? '#';
 		$title_color            = $attributes['titleColor'] ?? '#ffffff';
