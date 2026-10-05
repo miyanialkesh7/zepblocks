@@ -9,18 +9,18 @@ defined( 'ABSPATH' ) || exit;
 call_user_func(
 	function ( $attributes ) {
 		// Extract attributes with defaults
-		$video_url               = $attributes['videoUrl'] ?? '';
-		$poster_url              = $attributes['posterUrl'] ?? '';
-		$title                   = $attributes['title'] ?? 'A Beachfront Luxury Vacation Rental Awaits';
-		$description             = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront zepblocks offering the ultimate luxury vacation rental experience.';
-		$button_text             = $attributes['buttonText'] ?? 'Learn More';
-		$button_url              = $attributes['buttonUrl'] ?? '#';
-		$title_color             = $attributes['titleColor'] ?? '#ffffff';
-		$title_font_size         = $attributes['titleFontSize'] ?? 48;
-		$title_font_weight       = $attributes['titleFontWeight'] ?? '700';
-		$title_font_family       = $attributes['titleFontFamily'] ?? '';
-		$description_color       = $attributes['descriptionColor'] ?? '#ffffff';
-		$description_font_size   = $attributes['descriptionFontSize'] ?? 18;
+		$video_url              = $attributes['videoUrl'] ?? '';
+		$poster_url             = $attributes['posterUrl'] ?? '';
+		$title                  = $attributes['title'] ?? 'A Beachfront Luxury Vacation Rental Awaits';
+		$description            = $attributes['description'] ?? 'Nestled along the resplendent beaches of Santa Teresa sits Casa Teresa and Casa Teresa Grande, both Costa Rica beachfront villas offering the ultimate luxury vacation rental experience.';
+		$button_text            = $attributes['buttonText'] ?? 'Learn More';
+		$button_url             = $attributes['buttonUrl'] ?? '#';
+		$title_color            = $attributes['titleColor'] ?? '#ffffff';
+		$title_font_size        = $attributes['titleFontSize'] ?? 48;
+		$title_font_weight      = $attributes['titleFontWeight'] ?? '700';
+		$title_font_family      = $attributes['titleFontFamily'] ?? '';
+		$description_color      = $attributes['descriptionColor'] ?? '#ffffff';
+		$description_font_size  = $attributes['descriptionFontSize'] ?? 18;
 		$description_font_weight = $attributes['descriptionFontWeight'] ?? '400';
 		$description_font_family = $attributes['descriptionFontFamily'] ?? '';
 		$button_bg_color         = $attributes['buttonBgColor'] ?? '#ffffff';

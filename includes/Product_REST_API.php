@@ -11,6 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+/**
+ * Exposes custom WooCommerce product fields through the REST API.
+ */
 class Product_REST_API {
 
 	/**

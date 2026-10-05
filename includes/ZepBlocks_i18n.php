@@ -1,4 +1,9 @@
 <?php
+/**
+ * Loads the plugin's translation files.
+ *
+ * @package ZepBlocks
+ */
 
 namespace ZepBlocks;
 
@@ -12,12 +17,11 @@ defined( 'ABSPATH' ) || exit;
 class ZepBlocks_i18n {
 
 	/**
-	 * Call language method
+	 * Hooks the text domain loader into `plugins_loaded`.
 	 *
-	 * @since   1.0.0
-	 * @access  public
-	 * @param   none
-	 * @return  void
+	 * @since	1.0.0
+	 * @access	public
+	 * @return	void
 	 */
 	public function __construct() {
 		add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
@@ -26,10 +30,9 @@ class ZepBlocks_i18n {
 	/**
 	 * Load language file from directory
 	 *
-	 * @since   1.0.0
-	 * @access  public
-	 * @param   none
-	 * @return  void
+	 * @since	1.0.0
+	 * @access	public
+	 * @return	void
 	 */
 	public function load_plugin_textdomain() {
 		load_plugin_textdomain( 'zepblocks', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
